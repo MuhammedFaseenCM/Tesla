@@ -79,7 +79,35 @@ section:active .content{
     opacity: 1;
 }
 section h1{
+
     font-size: 3rem ;
+    opacity: 0;
+    transition: 900ms ease-in-out transform,
+                900ms ease-in-out opacity;
+}
+section p{
+    opacity: 0;
+    transition: 900ms ease-in-out transform,
+                900ms ease-in-out opacity;
+} 
+section .banner-text{
+    opacity: 1;
+}
+section button{
+    opacity: 1;
+    transition: 900ms ease-in-out transform,
+                900ms ease-in-out opacity;
+}
+
+/* section .content{
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: 900ms ease-in-out transform,
+                900ms ease-in-out opacity;
+} */
+.show-content{
+    opacity: 1;
+    transform: translateY(0);
 }
 section a{
     color: inherit;
